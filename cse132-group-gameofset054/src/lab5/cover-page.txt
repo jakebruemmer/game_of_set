@@ -1,0 +1,13 @@
+Coverpage for Lab 5 (Set Game) Jake Bruemmer 419767, Allison Zastrow 423550, Kathleen Szabo 420502
+
+We decided to bring the Client into our GUI. This is what Jake had done for this WeasleyClock and it worked out 
+reasonably well for him there. We ran into some issues using the data stream from the GUI at first, but we were
+able to work through the problems we faced somewhat ok.
+
+The NetworkView isn't used in our design because the "server" is controlled by the GameController class and each
+PlayerHandler is associated with a particular Client. The PlayerHandler for each Client communicates with the 
+GameController and the GUI gets updated through that communication. We used the SetMsgInput and SetMsgOutput classes
+to trim down the code that we had in our while true loops on both the client and server side.
+
+We ran out of time to test the end of the game thoroughly, but we're confident that the code that we have for the 
+end of the game will do its job. 
